@@ -33,8 +33,8 @@ images_test,labels_test = np.array(images_test)/255,np.array([labels_test]).T
 #Step 3 : Optimization with different neurons
 tf.random.set_seed(1234)
 
-L1_neurons = [10,10,15,25,40,60,100,150,300]
-L2_neurons = [5,8,10,10,15,20,40,60,120]
+L1_neurons = [10,10,15,25,40,60,100,150,300,600,1200]
+L2_neurons = [5,8,10,10,15,20,40,60,120,240,480]
 E_train = []
 E_cv = []
 for i in range(len(L1_neurons)):
