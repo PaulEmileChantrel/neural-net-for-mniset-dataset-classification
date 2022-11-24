@@ -35,15 +35,25 @@ def plot_images(X,y)->None:
 def plot_loss_tf(history):
     losses = history.history['loss']
     plt.plot(losses)
+    try:
+        val_loss = history.history['val_loss']
+        plt.plot(val_loss)
+        plt.legend(['loss','test_loss'])
+    except:
+        pass
+
     plt.xlabel('epoch')
     plt.ylabel('losses')
 
-def calculate_errors(model,X,y,E):
+def calculate_errors(model,X,y,E,cnn = False):
     failed_X = []
     failed_y = []
 
     test_size = X.shape[0]
-    prediction = model.predict(X.reshape(test_size,784))
+    if not cnn:
+        prediction = model.predict(X.reshape(test_size,784))
+    else:
+        prediction = model.predict(X.reshape(test_size,28,28))
     prediction = np.argmax(prediction,axis=1)
 
     failed_X = [X[i,:] for i in range(len(prediction)) if prediction[i]!=y[i]]
