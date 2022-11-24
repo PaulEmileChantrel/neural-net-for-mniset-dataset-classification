@@ -1,7 +1,7 @@
 # Neural Net for MNIST dataset classification
 
-In this project, we create a neural network with TensorFLow to classify the MNIST digit dataset.
-This project is done with the help of the Coursera lecture on advanced learning algorythm : https://www.coursera.org/learn/advanced-learning-algorithms/home/welcome
+In this project, we created a neural network with TensorFLow to classify the MNIST digit dataset.
+This project was done with the help of the Coursera lecture on advanced learning algorythm : https://www.coursera.org/learn/advanced-learning-algorithms/home/welcome
 <p align="center">
 <img src='https://user-images.githubusercontent.com/96018383/203671856-26c9c4bf-9c84-4904-b18b-3fa31f71228e.png'>
 </p>
