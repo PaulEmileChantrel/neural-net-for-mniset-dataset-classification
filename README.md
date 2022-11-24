@@ -78,5 +78,5 @@ Here is an exemple of the images not found.
 </p>
 
 
-Even for a human, some of this images are not easy to classify.
+Even for a human, some of this images are not easy to classify!
 
